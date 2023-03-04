@@ -1,0 +1,91 @@
+body {
+    padding: 0px;
+    margin: 0px;
+    background-color: #1B1B1B;
+    font-family: 'Shantell Sans', cursive;
+    height: 100vh;
+    width: 100vw;
+}
+button {
+    font-family: 'Shantell Sans', cursive;
+}
+.container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.container .head{
+    background-color: #5d5a60d1;
+    width: 30%;
+    padding: 9px;
+    border-radius: 30px;
+    text-align: center;
+    color: white;
+    font-weight: 500;
+    font-size: 20px;
+}
+.head span{
+    color: #0089ff;
+    margin: 0px 5px;
+}
+.body{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 35%;
+    margin:10px 0px;
+}
+.body .square{
+    width: 100px;
+    height: 100px;
+    background: #0089ff;
+    margin: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    border-radius: 6px;
+    flex-basis: 30%;
+    cursor: pointer;
+    transition: 0.2s;
+}
+.body .square:hover{
+    background: #014178;
+}
+@media (max-width:991px) {
+    .body{
+        width: 50%;
+    }
+}
+@media (max-width:767px) {
+    .body{
+        width: 70%;
+    }
+}
+@media (max-width:565px) {
+    .body{
+        width: 100%;
+    }
+    .body .square{
+        width: 50px;
+        height: 50px;
+    }
+}
+.reset{
+    background-color: #5d5a60d1;
+    color: white;
+    border-radius: 10px;
+    padding: 8px 30px;
+    font-size: 20px;
+    text-transform: capitalize;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.reset:hover{
+color: #0089ff;
+padding: 8px 35px;
+}
